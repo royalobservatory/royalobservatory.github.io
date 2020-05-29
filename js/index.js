@@ -50,7 +50,7 @@ function Particle() {
 
         this.radius = this.radius + this.speed;
 
-        if (this.radius > 200) {
+        if (this.radius > 250) {
             this.radius = Math.round((Math.random() * 10));
             this.x = +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi / 2;
             this.y = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi / 2.02;
